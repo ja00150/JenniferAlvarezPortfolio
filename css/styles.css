@@ -1,0 +1,431 @@
+/*  
+Author: Jennifer Alvarez 
+File Name: styles.css
+Date: 04/24/2023
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, img, h1, h3, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* Style rules for mobile class to hide tab-desk */
+.mobile {
+  display: block;
+}
+
+.tab-desk, #nav-links {
+  display: none;
+}
+
+
+/* Style rules for header content */
+.mobile h1, .mobile h3 {
+    font-style: normal;
+    padding: 0.5%;
+    text-align: center;
+    color: #008B8B;
+}
+
+.mobile h1 {
+  font-size: 3em;
+  font-family: 'Noto Serif', serif;
+}
+
+.mobile h3 {
+  font-size: 2em;
+  font-family: 'Prompt', sans-serif;
+}
+
+/*Style rules for body and images*/
+body {
+  background-color: #F0F8FF;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules for skip navigation link */
+.skip {
+    position: absolute;
+    left: -999px;
+}
+ 
+.skip:focus {
+    color: #fff;
+    background-color: #2a1f14;
+    text-decoration: none;
+    padding: 0.5%;
+    top: auto;
+    left: auto;
+    right: 1px;
+    z-index: 1;
+}
+
+/* Style rules for navigation area*/
+nav {
+  background-color: #008B8B;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+ 
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #F0FFFF;
+    padding: 2%;
+}
+ 
+.nav-icon div { 
+    height: 50px;
+    width: 50px;
+    color: #008B9B; 
+} 
+
+/*Style rules for main content*/
+main {
+  padding: 2%;
+  font-family: Verdana, Arial, monospace;
+}
+
+main p {
+  color: #008B8B;
+  font-size: 1.25em;
+}
+
+main h3 {
+  padding-top: 2%;
+}
+
+main ul {
+  list-style: square;
+}
+
+main li {
+  color: #008B8B;
+  font-size: 1em;
+}
+
+main a {
+  color: #008B8B;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Style rules for class and id selectors*/
+.link {
+  color: #008B8B;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Styles rules for contact */
+#contact {
+  text-align: center;
+  color: #008B8B;
+}
+
+.profile {
+  float: right;
+  padding: 13px;
+}
+
+.tel-link {
+  background-color: #008B8B;
+  padding: 2%;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.tel-link a {
+  color: #F0F8FF;
+  text-decoration: none;
+  font-size: 1em;
+  display: block;
+}
+
+.map {
+  border: 4px solid #008B8B;
+  width: 90%;
+  height: 45%;
+}
+
+/* Style rules for table elements */
+table {
+    border: 1px solid #008B8B;
+    border-collapse: separate;
+    margin: 0 auto;
+    border-spacing: 2px;
+}
+ 
+caption {
+    font-size: 1.5em;
+    font-weight: bold; 
+    padding: 1%;
+    color: #008B8B;
+}
+ 
+th, td {
+    border: 1px solid #008B8B;
+    padding: 0.50%; 
+}
+ 
+th {
+    display: table-cell;
+    font-weight: bold;
+    column-width: 90px;
+    background-color: #008B8B;
+    color: #fff;
+    font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+  background-color: #ADD8E6;  
+}
+
+/* Style rules for form elements */
+fieldset, input {
+  margin-bottom: 2%;
+}
+
+legend {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  padding-top: 3%;
+}
+
+#submit {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 3%;
+  background-color: #ADD8E6;
+  font-size: 1em;
+}
+
+.round {
+  border-radius: 8px;
+}
+
+/*styles rules for languages */
+#info {
+  clear: left;
+  background-color: #ADD8E6;
+  padding: 1% 2%;
+}
+
+#python h4, #javascript h4, #java h4 {
+  font-style: italic;
+  font-size: 0.75em;
+}
+
+#python, #javascript, #java{
+    margin: 0 2%;
+}
+
+/*Style rules for footer content*/
+
+footer {
+  clear: right;
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #008B8B;
+  color: #F0F8FF;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+footer a{
+  color: #F0FFFF;
+  text-decoration: none;
+}
+
+.social img {
+  display: inline-block;
+  padding: 4%;
+}
+
+/* style rules for code*/
+aside {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 4px 4px 10px #ADD8E6;
+}
+figure {
+  border: 4px solid #008B8B;
+  box-shadow: 6px 6px 10px #ADD8E6;
+  max-width: 400px;
+  margin: 2% auto;
+
+}
+
+figcaption {
+  padding: 2%;
+  border-top: 4px solid #008B8B;
+  color: #008B9B;
+}
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px), print { 
+  /* Tablet Viewport: Show tab-desk class, hide mobile class */  
+  .tab-desk {
+    display: block;
+  } 
+  .mobile, .mobile-nav {
+    display: none;  
+  } 
+ 
+  /* Tablet Viewport: Style rules for nav area */
+
+  nav ul {
+  list-style-type: none;
+  text-align: center;
+  }
+
+  nav li {
+    border-top: none;
+    display: inline-block;
+    font-size: 1.5em;
+    border-right: 1px solid #e5e9fc;
+  }
+
+  nav li:last-child {
+    border-right: none;
+  }
+
+  /* Tablet Viewport: Style rule for map */
+  .map {
+    width: 500px;
+    height: 450px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 10px;
+  }
+  aside {
+    grid-column: 1 / span 2;
+  }
+
+  /* Tablet Viewport: Style rule for form element */
+  form {
+    width: 70%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Tablet Viewport: Style rules for footer area */
+   footer {
+     overflow: auto;
+   }
+   .copyright {
+     float: left;
+     width: 65%;
+   }
+   .social {
+     float: right;
+     width: 25%;
+   }
+}
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print {
+  /* Desktop Viewport: hide mobile viewport */
+  .tab-desk{
+    display: block;
+  }
+
+  .mobile, .mobile-nav{
+    display: none;
+  }
+  /* Desktop Viewport: Style rules for nav area */
+  nav li a {
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: block;
+    color: #F0F8FF;
+    text-decoration: none;
+  }
+
+  nav li a:hover {
+    color: #008B8B;
+    background-color: #F0FFFF;
+    transform: scale(1.2);
+  }
+
+  /* Desktop Viewport: Style rules for main content */
+  main h3 {
+    font-size: 1.5em;
+    color: #008B8B;
+  }
+
+  .grid {
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+  }
+  aside {
+    grid-column: 1 / span 3;
+    font-size: 2em;
+  }
+
+  #python, #javascript, #java {
+    width: 29%;
+    float: right;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+/* Desktop Viewport: Style rules for table element */
+  table {
+    width: 70%;
+  }
+
+  /* Desktop Viewport: Style rules for form elements */
+  .form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  .btn {
+    grid-column: 1 / span 2;
+  }
+}
+
+/* Media Query for Print */
+@media print {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+
+
